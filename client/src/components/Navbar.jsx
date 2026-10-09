@@ -5,6 +5,7 @@ const links = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
+  { name: 'Project', href: '#projects' },
   { name: 'Labs', href: '#labs' },
   { name: 'Community', href: '#community' },
   { name: 'Why Hire Me', href: '#why' },
@@ -23,7 +24,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop menu */}
-        <ul className="hidden lg:flex items-center gap-6 text-sm">
+        <ul className="hidden xl:flex items-center gap-6 text-sm">
           {links.map((l) => (
             <li key={l.name}>
               <a href={l.href} className="hover:text-teal-400 transition">
@@ -44,7 +45,7 @@ export default function Navbar() {
 
         {/* Mobile button */}
         <button
-          className="lg:hidden text-2xl"
+          className="xl:hidden text-2xl"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -54,7 +55,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <ul className="lg:hidden px-6 pb-4 flex flex-col gap-4 bg-slate-900">
+        <ul className="xl:hidden px-6 pb-4 flex flex-col gap-4 bg-slate-900">
           {links.map((l) => (
             <li key={l.name}>
               <a href={l.href} onClick={() => setOpen(false)} className="block hover:text-teal-400">

@@ -5,10 +5,15 @@ const education = [
 ]
 
 const labs = [
+  'IP Addressing',
+  'Subnetting (FLSM/VLSM)',
   'Static Routing',
-  'DHCP',
-  'OSPF',
+  'RIP v2',
   'EIGRP',
+  'OSPF',
+  'DHCP',
+  'NAT & ACLs',
+  'Port Security',
 ]
 
 export default function About() {
@@ -32,6 +37,10 @@ export default function About() {
               Facebook page where I share CCNA practice MCQs. Teaching others
               helps me revise and stay consistent.
             </p>
+            <p>
+  Alongside networking, I am building Travel Buddy, my final year project with the MERN stack. It has
+  real-time chat (Socket.io), JWT authentication and a partner matching engine.
+</p>
 
             <h3 className="pt-4 font-semibold text-slate-200">Lab topics I've practiced</h3>
             <div className="flex flex-wrap gap-2">

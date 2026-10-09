@@ -1,0 +1,196 @@
+export const REPO = 'https://github.com/Hammadullah323/networking-labs'
+
+export const courses = [
+  { id: 'iia', name: 'Internet / Intranet Architecture' },
+  { id: 'dcn', name: 'Data Communication Networks' },
+]
+
+// Naya lab add karna ho to bas ek object yahan paste karo.
+// course = 'dcn' ya 'iia', folder = GitHub repo ke andar ka folder ka naam.
+export const labs = [
+  // ---------------- IIA ----------------
+  {
+    course: 'iia',
+    title: 'Lab 1: Router Basics and CLI',
+    desc: 'Router CLI modes, interface IP configuration and basic connectivity tests with a PC.',
+    tags: ['Cisco IOS CLI', 'IP Addressing'],
+    folder: 'iia-lab1-router-basics',
+  },
+  {
+    course: 'iia',
+    title: 'Lab 2: DHCP and Wireless Routers',
+    desc: 'Router DHCP pool for wired PCs and WPA-protected wireless routers for wireless clients.',
+    tags: ['DHCP', 'Wireless', 'WPA'],
+    folder: 'iia-lab2-dhcp-and-wireless',
+  },
+  {
+    course: 'iia',
+    title: 'Lab 3: Static Routing',
+    desc: 'Five routers in a chain connected with static routes, verified with ping and tracert across all hops.',
+    tags: ['Static Routing', 'Tracert'],
+    folder: 'iia-lab3-static-routing',
+  },
+  {
+    course: 'iia',
+    title: 'Lab 4: Multi-Router Network',
+    desc: 'Six routers and 18 PCs connected in one network, with connectivity tested between PCs on different routers.',
+    tags: ['Topology Design', 'ICMP'],
+    folder: 'iia-lab4-multi-router-network',
+  },
+  {
+    course: 'iia',
+    title: 'Lab 5: Dynamic Routing with RIP v2',
+    desc: 'RIP version 2 with no auto-summary on a multi-router network, checked with the routing tables and ICMP tests.',
+    tags: ['RIP v2', 'Dynamic Routing'],
+    folder: 'iia-lab5-rip-v2',
+  },
+  {
+    course: 'iia',
+    title: 'Lab 6: Dynamic Routing with EIGRP',
+    desc: 'EIGRP on every router with neighbor adjacencies confirmed and PCs reaching each other across the network.',
+    tags: ['EIGRP', 'Dynamic Routing'],
+    folder: 'iia-lab6-eigrp',
+  },
+  {
+    course: 'iia',
+    title: 'Lab 7: Dynamic Routing with OSPF',
+    desc: 'Single-area OSPF on six routers with neighbors reaching the FULL state and end-to-end connectivity.',
+    tags: ['OSPF', 'Dynamic Routing'],
+    folder: 'iia-lab7-ospf',
+  },
+  {
+    course: 'iia',
+    title: 'Lab 8: Extended ACL with an FTP Server',
+    desc: 'RIP v2 between two routers and an extended ACL that allows only FTP to the server and blocks everything else.',
+    tags: ['ACL', 'FTP', 'RIP v2'],
+    folder: 'iia-lab8-acl-ftp-access-control',
+  },
+  {
+    course: 'iia',
+    title: 'Lab 9: Switch Port Security',
+    desc: 'Sticky MAC port security with shutdown violation mode, tested with an attacker device that gets blocked.',
+    tags: ['Port Security', 'Switching'],
+    folder: 'iia-lab9-port-security',
+  },
+  {
+    course: 'iia',
+    title: 'Lab 10: OSPF with NAT and ACL',
+    desc: 'OSPF network with dynamic NAT (pool) and an ACL on the edge router.',
+    tags: ['OSPF', 'NAT', 'ACL'],
+    folder: 'iia-lab10-ospf-nat-acl',
+  },
+  {
+    course: 'iia',
+    title: 'Lab 11: Route Redistribution',
+    desc: 'Static, RIP v2, EIGRP and OSPF zones joined through a core router with route redistribution between all of them.',
+    tags: ['Redistribution', 'RIP', 'EIGRP', 'OSPF'],
+    folder: 'iia-lab11-route-redistribution',
+  },
+  {
+    course: 'iia',
+    title: 'Lab 12: FLSM and VLSM Multi-Branch Network',
+    desc: 'Multi-branch design with /27 and /28 subnets, static routing and RIP v2 zones, and a central DHCP server.',
+    tags: ['FLSM', 'VLSM', 'RIP v2', 'DHCP'],
+    folder: 'iia-lab12-flsm-vlsm-multi-branch',
+  },
+  {
+    course: 'iia',
+    title: 'Assignment 1: Central DHCP with Static and RIP',
+    desc: 'Multi-branch network with static and RIP v2 zones, a central DHCP server and DHCP relay on the routers.',
+    tags: ['DHCP Relay', 'Static Routing', 'RIP v2'],
+    folder: 'iia-assignment1-dhcp-relay-static-rip',
+  },
+  {
+    course: 'iia',
+    title: 'Assignment 2: OSPF, EIGRP, Static and ACL',
+    desc: 'Three routing zones joined by mutual redistribution on the core router, with an extended ACL blocking web access for one zone.',
+    tags: ['OSPF', 'EIGRP', 'Redistribution', 'ACL'],
+    folder: 'iia-assignment2-ospf-eigrp-static-redistribution',
+  },
+
+  // ---------------- DCN ----------------
+  {
+    course: 'dcn',
+    title: 'Lab 1: Network Devices and Cables (Theory)',
+    desc: 'Written lab on end devices, intermediate devices (router, switch, hub), straight-through vs crossover cables and remote access.',
+    tags: ['Network Devices', 'Cabling', 'Theory'],
+    folder: 'dcn-lab1-network-devices',
+  },
+  {
+    course: 'dcn',
+    title: 'Lab 2: Multi-Router Network with Web Servers',
+    desc: 'Built a three-router network with serial links, switches, PCs and servers, and opened the web page from every PC.',
+    tags: ['Topology Design', 'HTTP', 'Serial Links'],
+    folder: 'dcn-lab2-web-servers',
+  },
+  {
+    course: 'dcn',
+    title: 'Lab 3: IP Addressing on a 4-Router Network',
+    desc: 'Configured IP addresses on serial and FastEthernet interfaces of four routers in a full mesh and on 8 PCs, verified with ping.',
+    tags: ['IP Addressing', 'Router CLI', 'Ping'],
+    folder: 'dcn-lab3-ip-addressing',
+  },
+  {
+    course: 'dcn',
+    title: 'Lab 4: Remote Access with Telnet',
+    desc: 'Configured Telnet access on four routers and opened remote sessions from PCs using the router IP addresses.',
+    tags: ['Telnet', 'Remote Access'],
+    folder: 'dcn-lab4-telnet-remote-access',
+  },
+  {
+    course: 'dcn',
+    title: 'Lab 5: Telnet and Connection Troubleshooting',
+    desc: 'Telnet from 12 PCs to four routers, plus troubleshooting of an addressing problem and two cabling mistakes.',
+    tags: ['Telnet', 'Troubleshooting', 'Cabling'],
+    folder: 'dcn-lab5-telnet-and-cable-troubleshooting',
+  },
+  {
+    course: 'dcn',
+    title: 'Lab 7: Subnetting and VLSM',
+    desc: 'Subnet design for different host requirements with the calculations done by hand for every subnet.',
+    tags: ['Subnetting', 'VLSM'],
+    folder: 'dcn-lab7-vlsm-subnetting',
+  },
+  {
+    course: 'dcn',
+    title: 'Lab 8: DHCP on a 4-Router Network',
+    desc: 'Each router is a DHCP server for its own LAN; all PCs received address, mask and gateway.',
+    tags: ['DHCP', 'IP Addressing'],
+    folder: 'dcn-lab8-dhcp-four-routers',
+  },
+  {
+    course: 'dcn',
+    title: 'Lab 9: FTP Server',
+    desc: 'FTP server with user accounts; files uploaded, listed, renamed and downloaded from PCs on different routers.',
+    tags: ['FTP', 'Server Config'],
+    folder: 'dcn-lab9-ftp-server',
+  },
+  {
+    course: 'dcn',
+    title: 'Lab 10: DNS and Web Server',
+    desc: 'DNS record for a custom domain, and the web server opened by name from PCs on three different routers.',
+    tags: ['DNS', 'HTTP'],
+    folder: 'dcn-lab10-dns-and-web-server',
+  },
+  {
+    course: 'dcn',
+    title: 'Lab 11: Email Server and DNS',
+    desc: 'Email server (SMTP/POP3) with DNS; mail sent and received between PCs.',
+    tags: ['Email', 'SMTP/POP3', 'DNS'],
+    folder: 'dcn-lab11-email-and-dns',
+  },
+  {
+    course: 'dcn',
+    title: 'Assignment 1: DHCP on a 5-Router Hub Network',
+    desc: 'One central router linked to four branch routers, each a DHCP server for a LAN of five PCs (20 PCs in total).',
+    tags: ['DHCP', 'Hub Topology', 'Serial Links'],
+    folder: 'dcn-assignment1-dhcp-five-routers',
+  },
+  {
+    course: 'dcn',
+    title: 'Assignment 2: Multi-Service Network (10 Routers)',
+    desc: 'Topology with 10 routers and 22 PCs running DHCP, FTP, DNS, web and email services.',
+    tags: ['DHCP', 'FTP', 'DNS', 'HTTP', 'Email'],
+    folder: 'dcn-assignment2-multi-service-network',
+  },
+]

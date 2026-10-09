@@ -4,12 +4,12 @@ const points = [
   {
     icon: <FiTool />,
     title: 'Hands-on Practice',
-    text: 'I have configured routing, DHCP, OSPF and EIGRP in real lab topologies, not just theory.',
+    text: 'I have configured static routing, RIP, EIGRP and OSPF, plus DHCP, NAT, ACLs and port security on multi-router Cisco topologies, not just theory.',
   },
   {
     icon: <FiBookOpen />,
     title: 'Consistent Learner',
-    text: 'I am studying for CCNA daily and tracking my progress by creating practice content.',
+    text: 'I am studying for CCNA regularly and tracking my progress by creating practice content.',
   },
   {
     icon: <FiUsers />,
