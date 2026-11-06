@@ -1,7 +1,10 @@
 const education = [
-  { title: 'BS Computer Science', note: 'Currently studying' },
-  { title: 'Intermediate', note: 'Completed' },
-  { title: 'Matric', note: 'Completed' },
+  {
+    title: 'BS Computer Science',
+    note: 'Karachi Institute of Economics and Technology (KIET) · 2023 – December 2026 (expected)',
+  },
+  { title: 'Intermediate', note: '2022' },
+  { title: 'Matriculation', note: '2020' },
 ]
 
 const labs = [
@@ -27,20 +30,20 @@ export default function About() {
         <div className="mt-10 grid gap-10 md:grid-cols-2">
           <div className="space-y-4 text-slate-400">
             <p>
-              I'm Hammadullah, a BS Computer Science student who wants to build
-              a career in networking. During my degree I completed labs for
-              Data Communication Networks and Internet/Intranet Architecture
-              using Cisco Packet Tracer.
+              I'm Hammadullah, a BS Computer Science student (graduating December 2026) who wants to build a
+              career in networking. During my degree I completed labs and assignments for Data Communication
+              Networks and Internet/Intranet Architecture using Cisco Packet Tracer.
             </p>
             <p>
-              I'm currently preparing for CCNA through self-study and I run a
-              Facebook page where I share CCNA practice MCQs. Teaching others
-              helps me revise and stay consistent.
+              I also completed the NAVTTC Cyber Security (CEH) course and I'm preparing for CCNA through
+              self-study. I run a Facebook page where I share CCNA practice MCQs, which helps me revise and
+              stay consistent.
             </p>
             <p>
-  Alongside networking, I am building Travel Buddy, my final year project with the MERN stack. It has
-  real-time chat (Socket.io), JWT authentication and a partner matching engine.
-</p>
+              Alongside networking, I'm building Travel Buddy, my final year project with the MERN stack, and
+              I completed a frontend developer internship at Developershub Corporation. I prepare my reports
+              and presentations in MS Office.
+            </p>
 
             <h3 className="pt-4 font-semibold text-slate-200">Lab topics I've practiced</h3>
             <div className="flex flex-wrap gap-2">

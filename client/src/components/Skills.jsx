@@ -15,6 +15,7 @@ const groups = [
       'DNS',
       'HTTP',
       'Email (SMTP/POP3)',
+      'Cyber Security (CEH course)',
     ],
   },
   {
@@ -28,7 +29,11 @@ const groups = [
     ],
   },
   {
-    title: 'Web Development (FYP)',
+    title: 'Programming',
+    items: ['C#', 'ASP.NET', 'Python', 'JavaScript', 'HTML & CSS'],
+  },
+  {
+    title: 'Web Development (MERN)',
     items: [
       'React.js',
       'Node.js',
@@ -44,8 +49,8 @@ const groups = [
     items: ['VLANs', 'Trunking', 'STP', 'IPv6'],
   },
   {
-    title: 'Other',
-    items: ['Git & GitHub', 'MS Office', 'Figma (basics)'],
+    title: 'Tools',
+    items: ['Git & GitHub', 'VS Code', 'Figma (basics)', 'MS Office (Word, PowerPoint, Excel)'],
   },
 ]
 

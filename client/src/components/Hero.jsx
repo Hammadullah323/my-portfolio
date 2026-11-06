@@ -5,10 +5,7 @@ export default function Hero() {
   const cvLink = `${import.meta.env.BASE_URL}cv.pdf`
 
   return (
-    <section
-      id="home"
-      className="min-h-screen flex items-center pt-20 px-6"
-    >
+    <section id="home" className="min-h-screen flex items-center pt-20 px-6">
       <div className="max-w-6xl mx-auto w-full flex flex-col-reverse md:flex-row items-center gap-10">
         {/* Text */}
         <div className="flex-1 text-center md:text-left">
@@ -17,17 +14,19 @@ export default function Hero() {
 
           <TypeAnimation
             sequence={[
-  'Aspiring Network Engineer', 2000,
-  'CCNA Preparation in Progress', 2000,
-  'Routing & Switching Enthusiast', 2000,
-]}
+              'Aspiring Network Engineer', 2000,
+              'CCNA Preparation in Progress', 2000,
+              'Routing & Switching Enthusiast', 2000,
+              'Cyber Security (CEH) Certificate', 2000,
+            ]}
             repeat={Infinity}
             className="text-xl sm:text-3xl text-slate-300 font-mono"
           />
 
           <p className="mt-6 text-slate-400 max-w-xl mx-auto md:mx-0">
-            BSCS student focused on computer networking. I build Cisco labs,
-            and I run a Facebook page that helps others practice CCNA MCQs.
+            BS Computer Science student focused on computer networking. I build Cisco Packet Tracer labs,
+            hold a NAVTTC Cyber Security (CEH) certificate, and run a Facebook page that helps others
+            practice CCNA MCQs.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
@@ -47,14 +46,12 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Photo placeholder */}
-        <div className="w-48 h-48 sm:w-64 sm:h-64 rounded-full bg-gradient-to-br from-teal-400 to-blue-500 flex items-center justify-center text-7xl font-bold text-slate-900 shadow-lg shadow-teal-500/20">
-          <img
-  src={`${import.meta.env.BASE_URL}Profile.jpg`}
-  alt="Hammadullah"
-  className="h-48 w-48 rounded-full border-4 border-teal-400 object-cover shadow-lg shadow-teal-500/20 sm:h-64 sm:w-64"
-/>
-        </div>
+        {/* Photo */}
+        <img
+          src={`${import.meta.env.BASE_URL}profile.jpg`}
+          alt="Hammadullah"
+          className="h-48 w-48 rounded-full border-4 border-teal-400 object-cover shadow-lg shadow-teal-500/20 sm:h-64 sm:w-64"
+        />
       </div>
     </section>
   )

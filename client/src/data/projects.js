@@ -8,7 +8,7 @@ export const projects = [
     subtitle: 'A Smart Travel Companion & Expense Management Platform',
     type: 'Final Year Project · BS Computer Science · KIET · 2026',
     team: 'Team of 4',
-    myRole: 'Backend Developer (MERN Stack)',
+    myRole: '',
     status: [
       { label: 'FYP 1: core modules completed (~70% of scope)', done: true },
       { label: 'FYP 2: in progress', done: false },
@@ -22,7 +22,7 @@ export const projects = [
       'Node.js',
       'Express.js',
       'MongoDB',
-      
+      'Mongoose',
       'Socket.io',
       'JWT',
       'bcrypt',
